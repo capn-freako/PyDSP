@@ -10,11 +10,11 @@ from distutils.core import setup
 
 setup(
     name='PyDSP',
-    version='0.3',
+    version='0.4',
     packages=['pydsp',],
     license='BSD',
     long_description=open('README.txt').read(),
-    url='http://www.banasfamily.net/PyDSP.html',
+    url='https://github.com/capn-freako/PyDSP',
     author='David Banas',
-    author_email='dbanas@banasfamily.net',
+    author_email='capn.freako@gmail.com',
 )

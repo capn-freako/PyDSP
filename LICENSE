@@ -1,14 +1,3 @@
-===========
-PyDSP
-===========
-
-PyDSP is a digital filter design tool with a graphical user interface (GUI).
-It uses the Traits/TraitsUI package of the `Enthought Python Distribution (EPD) <http://www.enthought.com/products/epd.php>`_.
-On a system with the EPD installed, PyDSP can be launched from a command prompt, like this:
-
-    $ easy_install PyDSP
-    $ python -m pydsp
-
 License
 =======
 

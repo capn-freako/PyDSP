@@ -70,9 +70,9 @@ class PyDSP (HasTraits):
     y = Property(Array, depends_on=['a', 'x'])
     plot_type = Enum("line", "scatter")
     plot_type2 = Enum("line", "scatter")
-    ident = String('PyDSP v0.2 - a digital filter design tool, written in Python\n\n \
-    David Banas\n \
-    July 9, 2011\n\n \
+    ident = String('PyDSP v0.4 - a digital filter design tool, written in Python\n\n \
+    David Banas <capn.freako@gmail.com>\n \
+    October 15, 2014\n\n \
     Copyright (c) 2011 David Banas; All rights reserved World wide.')
 
     # Set the default values of the independent variables.
@@ -336,12 +336,10 @@ view1 = View(
   ),
   resizable = True,
   handler = MyHandler(),
-#  buttons = ["CopyCoefficients", "OK"],
   buttons = [copy_coeffs, "OK"],
   title='DSP Filter Tool',
-  width=1200, height=900
+  width=1200, height=800
 )
 
 if __name__ == '__main__':
-    viewer = PyDSP()
-    viewer.configure_traits(view=view1)
+    PyDSP().configure_traits(view=view1)
